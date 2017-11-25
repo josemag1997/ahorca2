@@ -1,0 +1,40 @@
+body{
+	background: #2d2d2d;
+}
+
+form{
+	width: 250px;
+	border: 1px solid #ccc; /*borde de la caja del formulario como tal*/
+	margin: 15px;
+	padding: 15px;
+	text-align: center;
+	background: #cccccc; /*#cccccccolor  de la caja gris*/
+	opacity: 0.7;
+	filter: alpha(opacity=50);
+	border-radius: 12px; /*dobla las puntas de los cuadros*/
+	margin: 90px auto;/*posicion de todo*/
+	
+}
+
+input, textarea{  /*relleno de las cajas*/
+	
+	margin-bottom: 10px; /*espacio entre las cajas de texto*/
+	width: 220px;
+	padding: 10px;
+	border:1px solid #000; /*color borde de los campos*/
+	border-radius: 9px; /*dobla las puntas de los cuadros*/
+}
+
+input[type="submit"]{
+	margin-bottom: 0px;
+	background: #E6344A; /*color del boton guardar*/
+	color: #fff; /*color de las letras guardar*/
+	border: none;
+	width: 100px;
+}
+
+input[type="submit"]:hover{
+	background: #1798af;/*#E6344A*/ /*color cuando uno pasa el puntero por entrar y registro*/
+	cursor: pointer;
+}
+

@@ -1,0 +1,38 @@
+/*de aqui hacia abajo*/
+footer #redes-s > div {
+  width: 220px;
+  height: 60px;
+  float: left;
+  /*background: #ff8000;*/
+opacity: 0.7;
+
+}
+
+footer #redes-s div a {
+  width: 220px;
+  height: 60px;
+  /*background: #ff8000;*/
+  display: inline-block;
+}
+
+footer #redes-s .google {
+  background:url(../img/google.png);  
+    margin-bottom: 15px;
+}
+
+footer #redes-s .twitter {
+  background: url(../img/twitter.png);
+    margin-bottom: 15px;  
+}
+
+footer #redes-s .facebook {
+  background: url(../img/facebook.png); 
+}
+
+footer #redes-s .youtube {
+  background: url(../img/youtube.png);  
+}
+
+footer #redes-s > div:hover {
+  opacity: 1;
+}

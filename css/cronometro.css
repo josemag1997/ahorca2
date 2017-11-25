@@ -1,0 +1,66 @@
+#crono{
+	/**/width: 180px;
+	height: 70px;
+	background: #444141;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;	
+	font-size: 50px;
+	color: gray;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000;
+	float: right;
+	margin-top: 10px;
+
+}
+.boton_empezar{
+float: right;
+position: absolute;
+top: 250px;
+left: 1160px;
+
+}
+
+.seg{
+	width: 180px;
+	height: 100px;
+	background: #444141;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;	
+	font-size: 20px;
+	color: gray;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000;
+	position: absolute;
+	top: 300px;
+	left: 1100px;
+	
+}
+#todo{
+	background: #ccc;
+	width: 230px;
+	height: 300px;
+	margin:  10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 3px #000;
+	float: right;
+}
+/**/
+#palabras{
+		width: 180px;
+	height: 100px;
+	background: #444141;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;	
+	font-size: 20px;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #000;
+	/*position: absolute;
+	top: 300px;
+	left: 1100px;*/
+	float: left;
+}

@@ -1,0 +1,144 @@
+/* estilo general*/
+body {
+
+  background: #2d2d2d;
+
+}
+
+/*--- Bienvenidos ---*/
+#Bienvenidos {
+	position: absolute;
+	left: 80px;
+	width: 840px;
+	top: 70px;
+	float: left;
+	padding: 20px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#46793a+0,2d4c1e+100,2d4c1e+100,2d4c1e+100,2d4c1e+100 */
+background: #46793a; /* Old browsers */
+background: -moz-linear-gradient(top, #46793a 0%, #2d4c1e 100%, #2d4c1e 100%, #2d4c1e 100%, #2d4c1e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #46793a 0%,#2d4c1e 100%,#2d4c1e 100%,#2d4c1e 100%,#2d4c1e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #46793a 0%,#2d4c1e 100%,#2d4c1e 100%,#2d4c1e 100%,#2d4c1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46793a', endColorstr='#2d4c1e',GradientType=0 ); /* IE6-9 */
+margin: 20px 0px;
+border-radius: 5px,
+-moz-border-radius: 5px;
+-webki-border-radius: 5px;
+box-shadow: 0px 2px 2px #000;
+-moz-box-shadow: 0px 2px 2px #000;
+-webkit-box-shadow: 0px 2px 2px #000;
+}
+#Bienvenidos article h3{
+	font-family: sourcesans-light;
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+#Bienvenidos article {
+	color: #fff;
+	line-height: 27px;
+}
+
+#titulo{
+	color: #1798af;
+	text-align: left;
+	width: 600px;
+	height: 300px;
+	font-size: 21px;
+	position: absolute;
+	top: 170px; /*altura del titulo*/
+	left: 80px;
+}
+
+#cajaintroduccion1 {
+	/*border: 1px solid #ccc; /*borde de la caja del formulario como tal*/
+	/*border-radius: 12px; /*dobla las puntas de los cuadros*/
+	/*margin: 15px;margin: 15px;
+	opacity: 0.7;*/
+	color: #fff;
+	position: absolute;
+	top:  210px; /*altura del texto*/
+	left: 80px;
+	font-size: 18px; /*parrafo de la introduccion*/
+	text-align: justify;
+	width: 510px; /*tamaño anchode la caja*/
+	}
+
+	/*---Beneficios ---*/
+aside{
+	position: absolute;
+	left: 605px;
+	top: 180px;
+ 	width: 315px; /*ancho caja azul*/
+ 	height: 410px;
+	float: right;
+	margin-right: 50px;
+	background: #4d78b3;
+	text-align: justify;
+	font-size: 17px;
+	padding: 10px 10px 0px 10px; 
+	border-radius: 5px; /*dobla las punticas del cuadro azul*/
+		-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+aside .widget {
+	margin-bottom: 10px;
+	float: justify;
+}
+
+
+aside .widget > h3 {
+background: #fff;
+color: #4d78b3;
+width: 290px; /*tamaño caja blanca eje x*/
+padding: 3px 8px; /*ancho y largo caja blanca*/
+text-align: center; /*centra el texto de l acaja blanca*/
+font-weight: bold;
+margin-bottom: 5px; /*alto del texto*/
+}
+
+aside .widget a {color: #fff;}
+aside .widget ul li {margin-bottom: 5px;}
+aside .widget img {width: 220px;
+}
+
+/*imagen con efecto*/
+.foto2 { 
+	top: 360px;
+	left: 80px; /* para correr la imagen hacia la derecha */
+	padding: 10px; 
+	margin: 10px; 
+	/*border: 2px solid black; */
+	width: 220px; /*ancho imagen*/
+	position: absolute; right: 200px;
+	}
+
+img:hover{
+
+
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5)
+}
+
+.foto3 { 
+	top: 360px;
+	left: 332px; /* para correr la imagen hacia la derecha */
+	padding: 10px; 
+	margin: 10px; 
+	/*border: 2px solid black; */
+	width: 220px; /*ancho imagen*/
+	position: absolute; right: 200px;
+	}
+
+img:hover{
+
+
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5)
+}

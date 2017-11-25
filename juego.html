@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+<title>Juego</title>
+
+                <link rel="stylesheet" type="text/css" href="css/menu2.css">
+            <link rel="stylesheet" type="text/css" href="css/cronometro.css">
+
+                                <link rel="stylesheet" type="text/css" href="css/juego.css">
+                                <link rel="stylesheet" type="text/css" href="css/menu2.css">
+                 <link rel="stylesheet" type="text/css" href="fonts.css">
+                <link rel="stylesheet" type="text/css" href="css/index1.css">
+                                <script type="text/javascript" src="js/alert.js"></script>
+
+
+<header>
+    <div id="subheader">
+      <div id="logotipo"><p><a ref="">Ahorcado</a></p></div>
+      <nav>
+        <ul>
+          <li> <a href="index1.html"> Inicio </a></li>
+          <li> <a href="Instrucciones.html"> Instrucciones </a></li>
+          <li> <a href="juego.php"> Jugar </a></li>
+          <li><a href="cerrar_session.php"> Cerrar sesion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><br><br><br>
+
+</head>
+<body >
+    <div id="todo">
+       
+             <h2 id='crono'>00:00:00</h2>
+
+            <input type="button" value="Empezar" class="boton_empezar" id="boton" onclick="empezarreiniciar(this);" >
+
+                <div class="seg">
+                    <p>
+                        Adivina la palabra antes que se agote el tiempo (2 Min).
+                    </p>
+                </div>
+	</div>
+	<h3 id="palabras">Las palabras para adivinar, son palabras agudas sin acento.</h3>
+</body >
+</html>
+
+<?php
+SESSION_START();
+require_once('funciones.php');
+
+
+if (isset($_POST['letra'])) {
+    jugar($_POST['letra']);
+}else{
+    empezar();
+}
+echo "<br><br>";
+
+echo "<center><div style='background: #fff;  width: 540px; height: 500px; border-radius: 4px; margin: 10px;padding: 10px; box-shadow: 2px 2px 3px 3px #000;'><h2 class='ahorcado'>";
+$ahorcado=$_SESSION['ahorcado'];
+    foreach ($ahorcado as $value) {
+        echo $value;
+    }
+
+echo "</h2>"; 
+echo "<img src='img/2.png' >";
+echo "<hr class='linea1'style=' width:500px; ' />";
+echo "Fallos:".$_SESSION['fallos'];
+echo "<br> Letras ya jugadas".$_SESSION['yajugada'];
+echo "<div  style=' width:500px;  border-radius: 5px;  height: 30px; font-size:2em; padding:9px;margin:7px;background:#ccc'>";
+
+    $pelicula=$_SESSION['cifrado'];
+    foreach ($pelicula as $letra) {
+        echo $letra;
+    }
+    echo "</div>";
+?>
+<hr style=' width:500px; '>
+<form method="POST">
+    letra:
+    <input type="text" name="letra" maxlength="1" size="1" id="myText" disabled> 
+
+     <input type="submit" name="Jugar" ></<center></div>
+
+   
+</form>
+</body>
+</html>
+
